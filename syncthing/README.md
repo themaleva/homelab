@@ -6,6 +6,8 @@ Syncthing is a continuous file synchronization program. It synchronizes files be
 ## Setup
 All steps are covered here: https://github.com/syncthing/syncthing/blob/main/README-Docker.md
 
+Documentation: https://docs.syncthing.net/
+
 Should that page move, the defaults are below:
 
 URL: <your_server_ip>:8384
