@@ -14,8 +14,10 @@ services:
     image: quay.io/hedgedoc/hedgedoc:1.9.7
     environment:
       - CMD_DB_URL=postgres://hedgedoc:password@database:5432/hedgedoc
-      - CMD_DOMAIN=localhost
-      - CMD_URL_ADDPORT=true
+      - CMD_DOMAIN=http://delltower
+      - CMD_URL_ADDPORT=false
+      - CMD_PROTOCOL_USESSL=false
+      - CMD_HSTS_ENABLE=true
     volumes:
       - /data/docker/hedgedoc/uploads:/hedgedoc/public/uploads
     ports:
