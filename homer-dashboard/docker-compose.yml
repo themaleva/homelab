@@ -3,6 +3,7 @@ services:
   homer:
     image: 'b4bz/homer'
     restart: unless-stopped
+    container_name: homer
     ports:
       - '8090:8080'
     volumes:
