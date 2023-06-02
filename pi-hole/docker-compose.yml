@@ -9,7 +9,7 @@ services:
     ports:
       - "10053:53/tcp"
       - "10053:53/udp"
-      - "10067:67/udp" # Only required if you are using Pi-hole as your DHCP server
+      - "67:67/udp" # Only required if you are using Pi-hole as your DHCP server
       - "8080:80/tcp" # 80 is in use by Nginx Proxy Manager so moved to 8080
     environment:
       TZ: 'Europe/London'
